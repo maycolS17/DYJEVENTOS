@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,800;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*aqui se permitira deslizar cuando hago el click en los enlaces del menu*/
+    scroll-behavior: smooth;
+}
+
+/*aqui es donde ira el diseño del menu*/
+.contenedor-header{
+    background: #DDB7AB;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #999B84;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header ul li a:hover{
+    color: #999B84;
+}
+
+.nav-responsive{
+    background-color: #999B84;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*aqui ira el diseño de inicio*/
+.inicio{
+    background-color: #F4EEED;
+    color: black;
+    padding: 50px 20px;
+}
+
+.inicio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.inicio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.inicio .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.inicio .contenido-seccion p span{
+    color: #999B84;
+    font-weight: bold;
+}
+
+/*aqui ira el diseño de sobre nosotros*/
+.sobrenosotros{
+    background-color: #F4EEED;
+    color: black;
+    padding: 50px 20px;
+}
+
+.sobrenosotros .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobrenosotros h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobrenosotros .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sobrenosotros .contenido-seccion img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*aqui ira el diseño del contacto*/
+.contacto{
+    background-color: #F4EEED;
+    color: black;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    left: 26%;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #999B84;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+footer{
+    background-color: #DDB7AB;
+    color: black;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #999B84;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+/*aqui se hace responsiva la pagina*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75PX;
+        background-color: #999B84;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and(max-width:700px){
+    .sobrenosotros .galeria{
+        display: block;
+        width: 100%;
+    }
+
+    .sobrenosotros .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    .sobrenosotros .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

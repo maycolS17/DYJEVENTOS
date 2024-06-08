@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/IMAGENES/Logo.jpg" type="imagen/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>D&J EVENTOS</title>
+</head>
+<body>
+    <!--AQUI IRA EL MENU DEL ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">D&J EVENTOS</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobrenosotros" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"><i class="fa-solid fa-bars"></i></div>
+        </header>
+    </div>
+
+    <!--AQUI IRA EL MENU DE INICIO-->   <!--falta completar todo con el diseño-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <h2>QUIENES SOMOS</h2>
+            <p><span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam vero sint maiores, 
+                    temporibus hic itaque reiciendis ipsum, quod sapiente natus accusamus minima accusantium 
+                    deserunt dolor quisquam quibusdam ullam impedit eligendi.
+                </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vitae est ad vero? Voluptate, eligendi molestiae libero sint voluptates, 
+                quia veritatis asperiores rerum at facere animi dolorem voluptatum consequatur praesentium dignissimos.
+            </p>
+
+            <div class="redes">
+                <h3>REDES SOCIALES</h3>
+                <a href="https://www.linkedin.com/in/maycol-de-la-cruz-4b5641213">FACEBOOK</a><br>
+                <a href="https://github.com/maycolS17">WHATSAPP</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--AQUI IRA EL MENU SOBRE NOSOTROS-->
+    <section id="sobrenosotros" class="sobrenosotros">
+        <div class="contenido-seccion">
+            <h2>SOBRE NOSOTROS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/IMAGENES/PrimeraImagen.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CUMPLEAÑOS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, 
+                            at quasi totam in eveniet aut ab fuga doloribus nulla doloremque. 
+                            Vel hic eos, atque facere ducimus sed assumenda repellat ab.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="/IMAGENES/Quinces.jpg" alt="">
+                    <div class="overlay">
+                        <h3>QUINCIAÑEROS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, 
+                            at quasi totam in eveniet aut ab fuga doloribus nulla doloremque. 
+                            Vel hic eos, atque facere ducimus sed assumenda repellat ab.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="/IMAGENES/70años.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CUMPLEAÑOS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, 
+                            at quasi totam in eveniet aut ab fuga doloribus nulla doloremque. 
+                            Vel hic eos, atque facere ducimus sed assumenda repellat ab.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="/IMAGENES/matrimonio.jpg" alt="">
+                    <div class="overlay">
+                        <h3>MATRIMONIOS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, 
+                            at quasi totam in eveniet aut ab fuga doloribus nulla doloremque. 
+                            Vel hic eos, atque facere ducimus sed assumenda repellat ab.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--AQUI IRA EL MENU DE CONTACTOS-->
+    <section id="contacto" class="contacto">
+        <div class="contacto-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--AQUI IRA EL FORMULARIO PARA CONTACTAR-->
+                <div class="col">
+                    <div class="col">
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="text" placeholder="Numero Telefonico">
+                        <input type="text" placeholder="Dirección de Correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
