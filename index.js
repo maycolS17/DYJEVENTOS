@@ -1,4 +1,4 @@
-let menuVisible = false;
+let menuVisible = true;
 //funcio que oculta y muestra el menu
 function mostrarOcultarMenu(){
     if(menuVisible){
